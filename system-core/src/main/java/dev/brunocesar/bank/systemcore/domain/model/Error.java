@@ -14,8 +14,8 @@ public class Error {
         throw new BusinessException(name + " is nonexistent.");
     }
 
-    public static void isInsufficientFunds() {
-        throw new BusinessException("Is insufficient funds.");
+    public static void isInsufficientBankBalance() {
+        throw new BusinessException("Is insufficient bank balance.");
     }
 
     public static void isSameAccount(String name) {
