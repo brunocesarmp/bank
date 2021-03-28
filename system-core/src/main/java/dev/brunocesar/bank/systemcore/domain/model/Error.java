@@ -19,7 +19,7 @@ public class Error {
     }
 
     public static void isSameAccount() {
-        throw new BusinessException("The debit and credit account must be different");
+        throw new BusinessException("The debit and credit account must be different.");
     }
 
 }
