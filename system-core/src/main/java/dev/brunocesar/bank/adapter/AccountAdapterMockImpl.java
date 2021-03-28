@@ -1,4 +1,4 @@
-package dev.brunocesar.bank.systemcore.adapter;
+package dev.brunocesar.bank.adapter;
 
 import dev.brunocesar.bank.systemcore.domain.model.Account;
 import dev.brunocesar.bank.systemcore.port.AccountRepository;
