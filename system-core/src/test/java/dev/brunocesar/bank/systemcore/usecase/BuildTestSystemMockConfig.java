@@ -10,7 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
  * @author Bruno César - https://github.com/brunocesarmp
  * @since 2021-03-28
  */
-@ContextConfiguration
+@Configuration
 @ComponentScan({
         "dev.brunocesar.bank.systemcore",
         "dev.brunocesar.bank.adapter"
