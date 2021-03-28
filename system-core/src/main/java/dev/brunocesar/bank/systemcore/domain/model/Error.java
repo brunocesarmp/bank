@@ -18,7 +18,7 @@ public class Error {
         throw new BusinessException("Is insufficient bank balance.");
     }
 
-    public static void isSameAccount(String name) {
+    public static void isSameAccount() {
         throw new BusinessException("The debit and credit account must be different");
     }
 
