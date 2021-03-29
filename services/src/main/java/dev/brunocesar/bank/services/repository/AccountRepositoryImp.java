@@ -19,7 +19,7 @@ import static java.util.Objects.isNull;
 @Named
 public class AccountRepositoryImp implements AccountRepository {
 
-    private static final String ERROR = "Unexpected error in access database";
+    private static final String ERROR = "Unexpected error in access database.";
 
     private JdbcTemplate jdbc;
 
@@ -33,7 +33,7 @@ public class AccountRepositoryImp implements AccountRepository {
         if (isNull(number)) {
             return null;
         }
-        var sql = "select * from account where number = ?";
+        var sql = "select * from account where number=?";
         var pm = new Object[]{number};
         RowMapper<Account> orm = (rs, rm) -> new Account(rs.getInt(1), rs.getBigDecimal(2), rs.getString(3));
 
@@ -50,7 +50,7 @@ public class AccountRepositoryImp implements AccountRepository {
     @Override
     public void update(Account account) {
         if (isNull(account)) {
-            throw new BusinessException("Account is required");
+            throw new BusinessException("Account is required.");
         }
 
         var sql = "update account set balance=?, name=? where number=?";

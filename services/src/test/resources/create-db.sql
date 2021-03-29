@@ -1,5 +1,5 @@
-create table conta (
-  numero integer primary key,
-  saldo decimal (10,2),
-  correntista varchar(200)
+create table account (
+  number integer primary key,
+  balance decimal (10,2),
+  name varchar(200)
 );
