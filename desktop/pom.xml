@@ -14,13 +14,23 @@
     </properties>
 
     <dependencies>
-        <!-- Conta Sistema -->
+        <!-- System Core -->
         <dependency>
             <groupId>dev.brunocesar</groupId>
             <artifactId>system-core</artifactId>
             <version>1.0.0</version>
             <scope>system</scope>
             <systemPath>/home/brunocesar/Projects/bank/system-core/out/artifacts/system/system.jar
+            </systemPath>
+        </dependency>
+
+        <!-- Services Account -->
+        <dependency>
+            <groupId>dev.brunocesar</groupId>
+            <artifactId>services</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>/home/brunocesar/Projects/bank/services/out/artifacts/services/services.jar
             </systemPath>
         </dependency>
 
@@ -50,6 +60,20 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
             <version>5.1.6.RELEASE</version>
+        </dependency>
+
+        <!-- Spring Jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.2.13.RELEASE</version>
+        </dependency>
+
+        <!-- hsqldb -->
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.4.1</version>
         </dependency>
 
     </dependencies>

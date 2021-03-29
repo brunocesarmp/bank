@@ -1,6 +1,7 @@
 package dev.brunocesar.bank.desktop.screen;
 
 import dev.brunocesar.bank.desktop.dev.BuildDesktopSystemMockConfig;
+import dev.brunocesar.bank.desktop.hml.BuildDesktopSystemHsqldbConfig;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import org.springframework.context.ApplicationContext;
@@ -17,7 +18,8 @@ public class JavaFxAdapter extends Application {
     @Override
     public void init() throws Exception {
         System.out.println("Starting spring.");
-        spring = new AnnotationConfigApplicationContext(BuildDesktopSystemMockConfig.class);
+//        spring = new AnnotationConfigApplicationContext(BuildDesktopSystemMockConfig.class);
+        spring = new AnnotationConfigApplicationContext(BuildDesktopSystemHsqldbConfig.class);
     }
 
     @Override

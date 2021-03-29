@@ -17,5 +17,10 @@ module desktop {
 
     opens dev.brunocesar.bank.desktop.screen;
     opens dev.brunocesar.bank.desktop.dev;
+    opens dev.brunocesar.bank.desktop.hml;
+
+    requires services;
+    requires spring.jdbc;
+    requires hsqldb;
 
 }

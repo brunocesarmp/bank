@@ -59,19 +59,19 @@
             <version>5.2.13.RELEASE</version>
         </dependency>
 
-        <!-- Spring Jdbc -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>5.2.13.RELEASE</version>
-        </dependency>
-
         <!-- Spring Test -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>5.2.13.RELEASE</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Spring Jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.2.13.RELEASE</version>
         </dependency>
 
         <!-- hsqldb -->
